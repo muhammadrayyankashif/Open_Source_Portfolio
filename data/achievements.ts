@@ -24,7 +24,7 @@ export const achievements = [
     id: 4,
     title: "Sole Website Developer",
     organization: "Scinnova",
-    category: "Biggest Event",
+    category: "Flagship Event",
     year: "2025",
   },
   {
