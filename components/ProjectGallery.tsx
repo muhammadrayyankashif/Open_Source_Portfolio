@@ -52,7 +52,7 @@ const projects = [
     org: "Cedar College",
     category: "Premium LMS System",
     img: "/Projects/KnightED.webp",
-    link: "https://knighted.vercel.app/",
+    link: "https://knightedx.vercel.app/",
   },
   {
     id: 7,
