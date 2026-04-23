@@ -16,11 +16,11 @@ const projects = [
   },
   {
     id: 2,
-    title: "Throne Of Valor",
-    org: "Personal Project",
-    category: "Indie Game",
-    img: "/Projects/ThroneOfValor.webp",
-    link: "https://muhammadrayyan.itch.io/throneofvalor",
+    title: "Health Hands Pharmacy",
+    org: "Health Hands Pharmacy",
+    category: "Health Tracking E-Com",
+    img: "/Projects/HealthHandsPharmacy.webp",
+    link: "https://play.google.com/store/apps/details?id=com.healthhandspharmacy.healthhands",
   },
   {
     id: 3,
@@ -64,11 +64,11 @@ const projects = [
   },
   {
     id: 8,
-    title: "Health Hands Website",
-    org: "Health Hands Pharmacy",
-    category: "E-Commerce",
-    img: "/Projects/HealthHandsWebsite.webp",
-    link: "https://www.healthhandspharmacy.com/",
+    title: "Throne Of Valor",
+    org: "Personal Project",
+    category: "Indie Game",
+    img: "/Projects/ThroneOfValor.webp",
+    link: "https://muhammadrayyan.itch.io/throneofvalor",
   },
 ];
 
