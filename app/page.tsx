@@ -1,9 +1,5 @@
-"use client";
-
 import Hero from "@/components/Hero";
-import BentoGrid from "@/components/BentoGrid";
 import InfiniteMarquee from "@/components/InfiniteMarquee";
-import HorizontalScroll from "@/components/HorizontalScroll";
 import Footer from "@/components/Footer";
 import Manifesto from "@/components/Manifesto";
 import Methodology from "@/components/Methodology";
@@ -23,9 +19,9 @@ export default function Home() {
           <Spotlight />
         </div>
         <Methodology />
-        {/* <BentoGrid /> */}
       </div>
       <Footer />
     </main>
   );
 }
+

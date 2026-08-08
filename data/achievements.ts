@@ -18,7 +18,7 @@ export const achievements = [
     title: "Developer",
     organization: "Softsols PK",
     category: "Full Stack",
-    year: "2023-Current",
+    year: "2022-Current",
   },
   {
     id: 4,

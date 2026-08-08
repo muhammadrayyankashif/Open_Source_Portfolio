@@ -48,27 +48,11 @@ const projects = [
   },
   {
     id: 6,
-    title: "KnightED",
-    org: "Cedar College",
-    category: "Premium LMS System",
-    img: "/Projects/KnightED.webp",
-    link: "https://knightedx.vercel.app/",
-  },
-  {
-    id: 7,
     title: "Lab Management System",
     org: "HealthInn Lab",
     category: "Lab Management System",
     img: "/Projects/HealthInn.webp",
     link: "https://healthinnlab.vercel.app/",
-  },
-  {
-    id: 8,
-    title: "Throne Of Valor",
-    org: "Personal Project",
-    category: "Indie Game",
-    img: "/Projects/ThroneOfValor.webp",
-    link: "https://muhammadrayyan.itch.io/throneofvalor",
   },
 ];
 
@@ -98,6 +82,7 @@ const ProjectItem = ({
 
   return (
     <div
+      ref={ref}
       className={`group relative w-full flex flex-col ${
         index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
       } gap-10 md:gap-20 items-center justify-center min-h-[50vh] md:min-h-[70vh] py-10 md:py-20`}

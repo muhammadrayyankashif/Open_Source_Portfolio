@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { Home, FolderOpen, Trophy, Mail, Menu, X } from "lucide-react";
 
 const navItems = [
@@ -15,7 +16,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed top-8 inset-x-0 flex justify-center z-50 pointer-events-none">
+    <nav aria-label="Main Navigation" className="fixed top-8 inset-x-0 flex justify-center z-50 pointer-events-none">
       <motion.div
         layout
         className="bg-white/10 backdrop-blur-md border border-white/20 rounded-full pointer-events-auto overflow-hidden text-white"
@@ -44,20 +45,21 @@ export default function Navbar() {
                 className="flex items-center gap-6 ml-10 w-full justify-center"
               >
                 {navItems.map((item, index) => (
-                  <a
+                  <Link
                     key={index}
                     href={item.href}
                     className="hover:text-white/50 transition-colors flex items-center justify-center p-2 rounded-full hover:bg-white/10"
                     title={item.name}
+                    aria-label={item.name}
                   >
                     {item.icon}
-                  </a>
+                  </Link>
                 ))}
               </motion.div>
             )}
           </AnimatePresence>
         </div>
       </motion.div>
-    </div>
+    </nav>
   );
 }

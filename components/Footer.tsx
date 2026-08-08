@@ -4,11 +4,9 @@ import { useEffect, useState } from "react";
 import MagneticButton from "@/components/MagneticButton";
 
 export default function Footer() {
-  const [time, setTime] = useState("");
-  const [mounted, setMounted] = useState(false);
+  const [time, setTime] = useState<string>("");
 
   useEffect(() => {
-    setMounted(true);
     const updateTime = () => {
       setTime(
         new Date().toLocaleTimeString("en-US", {
@@ -23,10 +21,8 @@ export default function Footer() {
     return () => clearInterval(interval);
   }, []);
 
-  if (!mounted) return null; // Or render skeleton, but footer is low priority
-
   return (
-    <div
+    <footer
       className="relative h-[80vh]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
@@ -36,7 +32,7 @@ export default function Footer() {
             Contact
           </h3>
           <div className="flex gap-4">
-            {/* No Socials - 2025 Elite Status */}
+            {/* Direct contact channels */}
           </div>
         </div>
 
@@ -68,10 +64,12 @@ export default function Footer() {
         </div>
 
         <div className="flex justify-between items-end">
-          <p className="text-white/30 text-sm">© 2025 MUHAMMAD RAYYAN</p>
-          <p className="text-white/30 text-sm">LOCAL TIME: {time}</p>
+          <p className="text-white/30 text-sm">© {new Date().getFullYear()} MUHAMMAD RAYYAN</p>
+          <p className="text-white/30 text-sm" suppressHydrationWarning>
+            LOCAL TIME: {time || "--:--"}
+          </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
