@@ -88,8 +88,9 @@ export default function ContactForm() {
           <h4 className="text-sm text-white/40 uppercase mb-4">
             Contact Details
           </h4>
-          <p className="text-lg text-white">{siteConfig.email}</p>
-          <p className="text-sm text-white/50 mt-1">{siteConfig.phone}</p>
+          <p className="text-lg text-white font-sans font-bold">{siteConfig.developerName}</p>
+          <p className="text-base text-white/80 mt-1">{siteConfig.email}</p>
+          <p className="text-sm text-white/60 mt-1">{siteConfig.phone}</p>
         </div>
         <div>
           <h4 className="text-sm text-white/40 uppercase mb-4">Socials</h4>
