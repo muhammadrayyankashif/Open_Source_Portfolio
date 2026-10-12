@@ -62,20 +62,19 @@ export default function Manifesto() {
 
       <div className="max-w-3xl mx-auto text-center mt-12 px-6 flex flex-col gap-8">
         <p className="text-xl md:text-2xl font-medium leading-relaxed">
-          The discipline required to memorize the{" "}
-          <span className="font-bold">Holy Quran</span> is the same discipline I
-          bring to every line of code. Unwavering attention to detail, and a
-          commitment to perfection.
+          Architectural integrity and rigorous engineering standards form the
+          foundation of modern systems. Unwavering attention to detail, scalable
+          design patterns, and a commitment to excellence.
         </p>
         <p className="text-lg md:text-xl font-light opacity-80">
-          I don&apos;t just build software; I engineer experiences. Where logic
-          meets creativity, that is where I thrive. Precision. Performance.
-          Perfection.
+          Crafting resilient distributed architectures and immersive digital
+          experiences. Where mathematical logic meets intuitive interaction.
+          Precision. Performance. Perfection.
         </p>
 
         <div className="mt-10 opacity-0 hover:opacity-100 transition-opacity duration-700 cursor-crosshair">
           <p className="text-sm font-mono tracking-widest uppercase text-black/40">
-            &quot;Protect what matters! Because nothing else does.&quot;
+            &quot;Simplicity is prerequisite for reliability.&quot; &mdash; Edsger W. Dijkstra
           </p>
         </div>
       </div>

@@ -21,37 +21,37 @@ export default function ZoomParallax() {
     {
       scale: scale4,
       className: "w-[25vw] h-[25vh] top-0 shadow-2xl z-20",
-      src: "/Projects/KnightED.webp",
+      src: "/projects/project-1.webp",
     },
     {
       scale: scale5,
       className: "top-[-30vh] left-[5vw] w-[35vw] h-[30vh]",
-      src: "/Projects/Respire.webp",
+      src: "/projects/project-2.webp",
     },
     {
       scale: scale6,
       className: "top-[-10vh] left-[-25vw] w-[20vw] h-[45vh]",
-      src: "/Projects/HealthHandsWebsite.webp",
+      src: "/projects/project-3.webp",
     },
     {
       scale: scale5,
       className: "top-[0vh] left-[27.5vw] w-[25vw] h-[25vh]",
-      src: "/Projects/Dasteyaar.webp",
+      src: "/projects/project-4.webp",
     },
     {
       scale: scale6,
       className: "top-[27.5vh] left-[5vw] w-[20vw] h-[25vh]",
-      src: "/Projects/PSN.webp",
+      src: "/projects/project-1.webp",
     },
     {
       scale: scale8,
       className: "top-[22.5vh] left-[-22.5vw] w-[30vw] h-[25vh]",
-      src: "/Projects/HealthHandsPharmacy.webp",
+      src: "/projects/project-2.webp",
     },
     {
       scale: scale9,
       className: "top-[22.5vh] left-[25vw] w-[15vw] h-[15vh]",
-      src: "/Projects/Scinnova.webp",
+      src: "/projects/project-3.webp",
     },
   ];
 

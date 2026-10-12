@@ -4,20 +4,20 @@ import Image from "next/image";
 
 const pictures = [
   {
-    src: "/Projects/KnightED.webp",
-    title: "KnightED",
+    src: "/projects/project-1.webp",
+    title: "Event Stream Engine",
   },
   {
-    src: "/Projects/Respire.webp",
-    title: "Respire II",
+    src: "/projects/project-2.webp",
+    title: "K8s Orchestrator",
   },
   {
-    src: "/Projects/HealthHandsWebsite.webp",
-    title: "Health Hands",
+    src: "/projects/project-3.webp",
+    title: "Realtime Canvas",
   },
   {
-    src: "/Projects/Scinnova.webp",
-    title: "Scinnova",
+    src: "/projects/project-4.webp",
+    title: "ZK Identity",
   },
 ];
 
