@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 import TextReveal from "./TextReveal";
 import { useEffect } from "react";
+import { siteConfig } from "@/data/portfolioConfig";
 
 export default function Hero() {
   const { scrollY } = useScroll();
@@ -96,11 +97,11 @@ export default function Hero() {
         className="absolute bottom-12 w-full flex justify-between px-6 md:px-12 text-xs md:text-sm font-mono text-white/30 uppercase tracking-widest mix-blend-difference"
       >
         <div>
-          <p>Muhammad Rayyan</p>
+          <p>{siteConfig.developerName}</p>
         </div>
         <div className="text-right">
-          <p>Based in Karachi</p>
-          <p>Available for Select Work</p>
+          <p>{siteConfig.title}</p>
+          <p>Open Source Edition</p>
         </div>
       </motion.div>
     </section>

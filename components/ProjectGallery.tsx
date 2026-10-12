@@ -5,56 +5,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-const projects = [
-  {
-    id: 1,
-    title: "Respire II",
-    org: "University of Edinburgh",
-    category: "LMS & Social System",
-    img: "/Projects/Respire.webp",
-    link: "https://respiredigitalhub.org",
-  },
-  {
-    id: 2,
-    title: "Health Hands Pharmacy",
-    org: "Health Hands Pharmacy",
-    category: "Health Tracking E-Com",
-    img: "/Projects/HealthHandsPharmacy.webp",
-    link: "https://play.google.com/store/apps/details?id=com.healthhandspharmacy.healthhands",
-  },
-  {
-    id: 3,
-    title: "PSN App",
-    org: "Pakistan Society Of Neurology",
-    category: "Info & Social Portal",
-    img: "/Projects/PSN.webp",
-    link: "https://play.google.com/store/apps/details?id=com.PSN.PsnApp",
-  },
-  {
-    id: 4,
-    title: "Dasteyaar",
-    org: "CCL Pharma",
-    category: "Patient Management App",
-    img: "/Projects/Dasteyaar.webp",
-    link: "https://play.google.com/store/apps/details?id=com.ccl.dasteyaar",
-  },
-  {
-    id: 5,
-    title: "Scinnova",
-    org: "Cedar College",
-    category: "Event Showcase Website",
-    img: "/Projects/Scinnova.webp",
-    link: "https://scinnova.cedar.edu.pk/",
-  },
-  {
-    id: 6,
-    title: "Lab Management System",
-    org: "HealthInn Lab",
-    category: "Lab Management System",
-    img: "/Projects/HealthInn.webp",
-    link: "https://healthinnlab.vercel.app/",
-  },
-];
+import { sampleProjects } from "@/data/portfolioConfig";
+
+const projects = sampleProjects;
 
 const ProjectItem = ({
   project,

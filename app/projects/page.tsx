@@ -2,18 +2,20 @@ import type { Metadata } from "next";
 import ProjectGallery from "@/components/ProjectGallery";
 import Footer from "@/components/Footer";
 
+import { siteConfig } from "@/data/portfolioConfig";
+
 export const metadata: Metadata = {
   title: "Projects & Architecture",
   description:
-    "Curated portfolio of production web applications, LMS portals, and high-performance software systems engineered by Muhammad Rayyan.",
+    "Curated portfolio of production web applications, distributed platforms, and high-performance software systems.",
   alternates: {
     canonical: "/projects",
   },
   openGraph: {
-    title: "Projects & Architecture | Muhammad Rayyan",
+    title: `Projects & Architecture | ${siteConfig.name}`,
     description:
-      "Curated portfolio of production web applications, LMS portals, and high-performance software systems engineered by Muhammad Rayyan.",
-    url: "https://muhammadrayyan.me/projects",
+      "Curated portfolio of production web applications, distributed platforms, and high-performance software systems.",
+    url: `${siteConfig.baseUrl}/projects`,
   },
 };
 

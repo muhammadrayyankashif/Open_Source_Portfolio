@@ -2,18 +2,20 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
+import { siteConfig } from "@/data/portfolioConfig";
+
 export const metadata: Metadata = {
   title: "Contact & Collaboration",
   description:
-    "Get in touch with Muhammad Rayyan for software architecture, engineering inquiries, and high-impact web development proposals.",
+    `Get in touch with ${siteConfig.developerName} for software architecture, engineering inquiries, and high-impact web development proposals.`,
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
-    title: "Contact & Collaboration | Muhammad Rayyan",
+    title: `Contact & Collaboration | ${siteConfig.name}`,
     description:
-      "Get in touch with Muhammad Rayyan for software architecture, engineering inquiries, and high-impact web development proposals.",
-    url: "https://muhammadrayyan.me/contact",
+      `Get in touch with ${siteConfig.developerName} for software architecture, engineering inquiries, and high-impact web development proposals.`,
+    url: `${siteConfig.baseUrl}/contact`,
   },
 };
 

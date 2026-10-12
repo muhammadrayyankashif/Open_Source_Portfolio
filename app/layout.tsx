@@ -19,41 +19,42 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+import { siteConfig } from "@/data/portfolioConfig";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://muhammadrayyan.me"),
+  metadataBase: new URL(siteConfig.baseUrl),
   title: {
-    default: "Muhammad Rayyan | Full Stack Engineer & Software Architect",
-    template: "%s | Muhammad Rayyan",
+    default: `${siteConfig.title} | Developer Portfolio Template`,
+    template: `%s | ${siteConfig.name}`,
   },
   description:
-    "Official portfolio of Muhammad Rayyan Kashif — Full Stack Engineer based in Karachi, PK. Engineering high-performance web systems, scalable architectures, and interactive digital experiences.",
+    "Modern, high-performance 4-page open-source developer portfolio template engineered with Next.js 16, React 19, Tailwind CSS v4, and Framer Motion.",
   keywords: [
-    "Muhammad Rayyan",
-    "Muhammad Rayyan Kashif",
-    "Full Stack Engineer",
-    "Software Engineer",
-    "Web Developer Karachi",
-    "Next.js Portfolio",
-    "React Developer",
-    "Frontend Specialist",
+    "Developer Portfolio",
+    "Open Source Portfolio",
+    "Next.js Portfolio Template",
+    "React 19",
+    "Tailwind CSS v4",
+    "Framer Motion",
+    "Software Engineer Portfolio",
   ],
-  authors: [{ name: "Muhammad Rayyan", url: "https://muhammadrayyan.me" }],
-  creator: "Muhammad Rayyan",
+  authors: [{ name: siteConfig.developerName, url: siteConfig.baseUrl }],
+  creator: siteConfig.developerName,
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://muhammadrayyan.me",
-    siteName: "Muhammad Rayyan Portfolio",
-    title: "Muhammad Rayyan | Full Stack Engineer & Software Architect",
+    url: siteConfig.baseUrl,
+    siteName: siteConfig.name,
+    title: `${siteConfig.title} | Developer Portfolio Template`,
     description:
-      "Engineering high-performance web systems, scalable architectures, and interactive digital experiences.",
+      "Modern, high-performance 4-page open-source developer portfolio template.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Muhammad Rayyan | Full Stack Engineer & Software Architect",
+    title: `${siteConfig.title} | Developer Portfolio Template`,
     description:
-      "Engineering high-performance web systems, scalable architectures, and interactive digital experiences.",
-    creator: "@MuhammadRayyan",
+      "Modern, high-performance 4-page open-source developer portfolio template.",
+    creator: "@developer",
   },
   robots: {
     index: true,
@@ -74,14 +75,12 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Muhammad Rayyan Kashif",
-  alternateName: "Muhammad Rayyan",
-  jobTitle: "Full Stack Engineer",
-  url: "https://muhammadrayyan.me",
+  name: siteConfig.developerName,
+  jobTitle: siteConfig.title,
+  url: siteConfig.baseUrl,
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Karachi",
-    addressCountry: "PK",
+    addressLocality: siteConfig.location,
   },
   knowsAbout: [
     "Full Stack Development",

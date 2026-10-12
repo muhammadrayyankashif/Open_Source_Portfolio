@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import MagneticButton from "@/components/MagneticButton";
+import { siteConfig } from "@/data/portfolioConfig";
 
 export default function Footer() {
   const [time, setTime] = useState<string>("");
@@ -39,33 +40,33 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center flex-1">
           <div className="relative">
             <h2 className="text-[10vw] font-bold text-[#ededed] uppercase leading-none tracking-tighter text-center">
-              Muhammad
+              Software
             </h2>
             <h2 className="text-[10vw] font-bold text-[#ededed] uppercase leading-none tracking-tighter text-center italic opacity-30">
-              Rayyan
+              Architect
             </h2>
           </div>
           <div className="mt-10 flex flex-col items-center gap-4">
             <MagneticButton>
               <a
-                href="mailto:muhammadrayyan08@outlook.com"
+                href={`mailto:${siteConfig.email}`}
                 className="bg-white text-black text-xl md:text-2xl font-medium px-10 py-5 rounded-full hover:scale-105 transition-transform block"
               >
-                muhammadrayyan08@outlook.com
+                {siteConfig.email}
               </a>
             </MagneticButton>
             <a
-              href="mailto:muhammadrayyandev08@gmail.com"
-              className="text-white/30 hover:text-white transition-colors text-sm"
+              href={`mailto:${siteConfig.secondaryEmail}`}
+              className="text-white/30 hover:text-white transition-colors text-sm font-mono"
             >
-              Dev: muhammadrayyandev08@gmail.com
+              Alternative: {siteConfig.secondaryEmail}
             </a>
           </div>
         </div>
 
         <div className="flex justify-between items-end">
-          <p className="text-white/30 text-sm">© {new Date().getFullYear()} MUHAMMAD RAYYAN</p>
-          <p className="text-white/30 text-sm" suppressHydrationWarning>
+          <p className="text-white/30 text-sm font-mono">© {new Date().getFullYear()} {siteConfig.name.toUpperCase()}</p>
+          <p className="text-white/30 text-sm font-mono" suppressHydrationWarning>
             LOCAL TIME: {time || "--:--"}
           </p>
         </div>

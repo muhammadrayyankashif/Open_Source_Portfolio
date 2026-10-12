@@ -1,7 +1,8 @@
 "use client";
 
 import MagneticButton from "./MagneticButton";
-import { MessageCircle } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { siteConfig } from "@/data/portfolioConfig";
 
 export default function ContactForm() {
   return (
@@ -14,7 +15,7 @@ export default function ContactForm() {
           const name = formData.get("name");
           const message = formData.get("message");
 
-          window.location.href = `mailto:muhammadrayyandev08@gmail.com?subject=Project Inquiry from ${name}&body=Name: ${name}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+          window.location.href = `mailto:${siteConfig.email}?subject=Project Inquiry from ${name}&body=Name: ${name}%0D%0A%0D%0AMessage:%0D%0A${message}`;
         }}
       >
         <div className="flex flex-col md:flex-row gap-10">
@@ -60,13 +61,13 @@ export default function ContactForm() {
                   const message = formData.get("message") as string;
 
                   // 1. Try Mailto
-                  window.location.href = `mailto:muhammadrayyan08@outlook.com?subject=Project Inquiry from ${name}&body=Name: ${name}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+                  window.location.href = `mailto:${siteConfig.email}?subject=Project Inquiry from ${name}&body=Name: ${name}%0D%0A%0D%0AMessage:%0D%0A${message}`;
 
                   // 2. Fallback check (Simple heuristic)
                   // If the user doesn't leave the window within 500ms, assume no mail app
                   setTimeout(() => {
                     if (document.hasFocus()) {
-                      const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=muhammadrayyan08@outlook.com&su=Project Inquiry from ${name}&body=Name: ${name}%0D%0AMessage:%0D%0A${message}`;
+                      const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${siteConfig.email}&su=Project Inquiry from ${name}&body=Name: ${name}%0D%0AMessage:%0D%0A${message}`;
                       window.open(gmailLink, "_blank");
                     }
                   }, 500);
@@ -76,38 +77,47 @@ export default function ContactForm() {
               }}
               className="text-xl px-12 py-6"
             >
-              Send Proposal
+              Send Message
             </button>
           </MagneticButton>
         </div>
       </form>
 
-      <div className="mt-32 grid grid-cols-1 md:grid-cols-3 gap-10 border-t border-white/10 pt-10">
+      <div className="mt-32 grid grid-cols-1 md:grid-cols-3 gap-10 border-t border-white/10 pt-10 font-mono">
         <div>
           <h4 className="text-sm text-white/40 uppercase mb-4">
             Contact Details
           </h4>
-          <p className="text-lg text-white">muhammadrayyan08@outlook.com</p>
-          <p className="text-lg text-white">+92 306 0503704</p>
+          <p className="text-lg text-white">{siteConfig.email}</p>
+          <p className="text-sm text-white/50 mt-1">{siteConfig.phone}</p>
         </div>
         <div>
           <h4 className="text-sm text-white/40 uppercase mb-4">Socials</h4>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <a
-              href="https://wa.me/923060503704"
+              href={siteConfig.socials.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg text-white hover:text-white/60 transition-colors flex items-center gap-2"
+              className="text-base text-white hover:text-white/60 transition-colors flex items-center gap-2"
             >
-              <MessageCircle size={24} />
-              WhatsApp
+              <Github size={18} />
+              GitHub
+            </a>
+            <a
+              href={siteConfig.socials.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-base text-white hover:text-white/60 transition-colors flex items-center gap-2"
+            >
+              <Linkedin size={18} />
+              LinkedIn
             </a>
           </div>
         </div>
         <div>
           <h4 className="text-sm text-white/40 uppercase mb-4">Location</h4>
-          <p className="text-lg text-white">Malir Cantt, Karachi</p>
-          <p className="text-lg text-white">Pakistan</p>
+          <p className="text-lg text-white">{siteConfig.location}</p>
+          <p className="text-sm text-white/50 mt-1">Remote &middot; Global</p>
         </div>
       </div>
     </div>

@@ -3,18 +3,20 @@ import AchievementsVoid from "@/components/AchievementsVoid";
 import AchievementsList from "@/components/AchievementsList";
 import Footer from "@/components/Footer";
 
+import { siteConfig } from "@/data/portfolioConfig";
+
 export const metadata: Metadata = {
   title: "Achievements & Archive",
   description:
-    "Honors, academic milestones, spiritual discipline, and engineering achievements of Muhammad Rayyan.",
+    "Honors, milestones, awards, and technical distinctions.",
   alternates: {
     canonical: "/achievements",
   },
   openGraph: {
-    title: "Achievements & Archive | Muhammad Rayyan",
+    title: `Achievements & Archive | ${siteConfig.name}`,
     description:
-      "Honors, academic milestones, spiritual discipline, and engineering achievements of Muhammad Rayyan.",
-    url: "https://muhammadrayyan.me/achievements",
+      "Honors, milestones, awards, and technical distinctions.",
+    url: `${siteConfig.baseUrl}/achievements`,
   },
 };
 

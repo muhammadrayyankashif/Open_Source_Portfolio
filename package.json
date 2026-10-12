@@ -1,7 +1,9 @@
 {
-  "name": "portfolio-site",
-  "version": "0.1.0",
-  "private": true,
+  "name": "nextjs-developer-portfolio-template",
+  "version": "1.0.0",
+  "description": "Ultra-sleek, dark-mode 4-page developer portfolio template engineered with Next.js 16, React 19, Tailwind CSS v4, and Framer Motion.",
+  "license": "MIT",
+  "author": "Muhammad Rayyan Kashif",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
