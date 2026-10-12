@@ -29,8 +29,8 @@ Designed for software engineers, systems architects, and technical creators who 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/muhammadrayyankashif/portfolio.git
-cd portfolio
+git clone https://github.com/muhammadrayyankashif/Open_Source_Portfolio.git
+cd Open_Source_Portfolio
 ```
 
 ### 2. Install dependencies
